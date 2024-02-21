@@ -1,5 +1,22 @@
+import { styled } from '../styles'
+
+const Button = styled('button', {
+  backgroundColor: '$rocketseat',
+
+  span: {
+    fontWeight: 'bold',
+  },
+
+  '&:hover': {
+    filter: 'brightness(0.8)',
+  },
+})
+
 export default function Home() {
   return (
-    <h1>Hello world</h1>
-  );
+    <Button>
+      <span>Hello</span>
+      world
+    </Button>
+  )
 }

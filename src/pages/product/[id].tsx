@@ -43,8 +43,6 @@ export default function Product({ product }: ProductProps) {
   )
 }
 
-// quando trabalhamos com páginas estáticas que precisam de parâmetros, a gente usa o getStaticPaths, que é basicamente um método que devolve esses ids
-
 export const getStaticPaths: GetStaticProps = async () => {
   // buscar os produtos mais vendidos/mais acessados
   const paths = [{ params: { id: 'prod_Pbsj54HxHSbLxR' } }]
